@@ -16,3 +16,15 @@ button{
     outline: none;
     cursor: pointer;
 }
+
+#map{
+    height: 50vh;
+}
+
+.description{
+    width: 80vw;
+    margin: 60px auto;
+    .content{
+        margin: 20px 0px;
+    }
+}

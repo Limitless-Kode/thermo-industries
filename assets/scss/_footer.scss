@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 40vh;
+    background-color: $white;
+    .row{
+        justify-content: space-around;
+        align-items: start;
+        .column{
+            .title{
+                margin-bottom: 30px;
+            }
+            .links{
+                .link{
+                    display: flex;
+                    margin-bottom: 15px;
+                    .image{
+                        margin-right: 5px;
+                        img{
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
