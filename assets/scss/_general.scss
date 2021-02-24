@@ -1,0 +1,17 @@
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+button{
+    background-color: $primary-color;
+    color: $white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

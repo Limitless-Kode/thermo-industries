@@ -1,0 +1,11 @@
+.navigation {
+  height: 60px;
+  width: 90vw;
+  left: 5vw;
+  justify-content: space-between;
+  position: absolute; }
+  .navigation a.link {
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    font-weight: lighter; }

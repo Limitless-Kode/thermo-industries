@@ -1,0 +1,23 @@
+{
+  "name": "thermo-industries",
+  "version": "1.0.0",
+  "description": "Company Website for Thermo Industries Ltd.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Limitless-Kode/thermo-industries.git"
+  },
+  "author": "Peter Claver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Limitless-Kode/thermo-industries/issues"
+  },
+  "homepage": "https://github.com/Limitless-Kode/thermo-industries#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
