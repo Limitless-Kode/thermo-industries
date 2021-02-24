@@ -16,7 +16,7 @@
         .image{
             width: 50vw;
             height: 100vh;
-            background: url('../images/bg.png') center center;
+            background: url('../images/bg.png') center center /cover no-repeat;
         }
     }
 }

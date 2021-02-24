@@ -1,0 +1,52 @@
+.services{
+    min-height: 80vh;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 60px 0px;
+    .row{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+           &__image{
+               margin-right: 30px;
+               background: url('../images/car.png') center center no-repeat;
+               background-size: cover;
+                height: 60vh;
+                width: 40vw;
+                background-color: $primary-color;
+                border-radius: 0px 50px 0px 0px;
+           }
+           &__list{
+               ul{
+                    li{
+                        position: relative;
+                        list-style-type: none;
+                        margin: 20px 0px;
+                        margin-left: 25px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            height: 3px;
+                            width: 8px;
+                            border: 1.5px solid $white;
+                            border-top: 1.5px solid transparent;
+                            border-right: 1.5px solid transparent;
+                            top: 40%;
+                            left: -15px;
+                            transform: translate(-50%,-50%) rotate(-45deg);
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            height: 20px;
+                            width: 20px;
+                            background-color: $primary-color;
+                            border-radius: 50%;
+                            left: -25px;
+                        }
+                    }
+                }
+           }
+    }
+}
