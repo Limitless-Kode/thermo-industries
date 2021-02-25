@@ -16,7 +16,35 @@
         .image{
             width: 50vw;
             height: 100vh;
-            background: url('../images/bg.png') center center /cover no-repeat;
+            background: url('../images/bg.png') center center no-repeat;
+            background-size: cover;
         }
+    }
+}
+
+
+
+
+@media(max-width: 680px){
+    .jumbotron{
+      .row{
+          .text{
+            position: relative;
+            left: 10vw;
+            width: 60vw;
+            color: $white;
+            &__main{
+                margin: 30px 0px;
+            }
+        }
+         .image{
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100vw;
+           height: 100vh;
+           z-index: -1;
+        }
+      }
     }
 }
