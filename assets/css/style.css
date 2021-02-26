@@ -58,6 +58,10 @@ button {
 p {
   line-height: 24px; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 .navigation {
   height: 60px;
   width: 90vw;
@@ -257,6 +261,7 @@ p {
     .footer .row .column .title {
       margin-bottom: 30px; }
     .footer .row .column .links .link {
+      cursor: pointer;
       display: flex;
       margin-bottom: 15px; }
       .footer .row .column .links .link .image {
@@ -267,3 +272,38 @@ p {
 @media (max-width: 540px) {
   .footer .row {
     justify-content: flex-start; } }
+
+.container.about .about {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg.png") center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .container.about .about h1 {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+
+.container.about .content {
+  padding: 60px; }
+
+.container.contact .contactus {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg.png") center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .container.contact .contactus h1 {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+
+.container.contact .contact_content {
+  width: 100vw;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
