@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 30px;
     min-height: 40vh;
     background-color: $white;
     .row{
         justify-content: space-around;
         align-items: start;
+        flex-wrap: wrap;
         .column{
             .title{
                 margin-bottom: 30px;
@@ -24,6 +26,15 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+@media(max-width: 540px){
+    .footer{
+        .row{
+            justify-content: flex-start;
         }
     }
 }

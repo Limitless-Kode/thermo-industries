@@ -19,13 +19,15 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 body {
   background-color: #FFFFFF;
   width: 100vw;
   font-family: Roboto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 .row {
   width: 100%;
@@ -53,6 +55,9 @@ button {
   .description .content {
     margin: 20px 0px; }
 
+p {
+  line-height: 24px; }
+
 .navigation {
   height: 60px;
   width: 90vw;
@@ -79,7 +84,6 @@ button {
     .navigation .links {
       position: relative;
       position: fixed;
-      height: 200px;
       width: 200px;
       background-color: #FFFFFF;
       display: flex;
@@ -144,6 +148,12 @@ button {
     height: 100vh;
     z-index: -1; } }
 
+@media (max-width: 420px) {
+  .jumbotron .row .text {
+    width: 80vw; }
+    .jumbotron .row .text__main h1 {
+      font-size: 22px; } }
+
 .partners_bar {
   width: 100vw;
   height: 90px;
@@ -192,6 +202,13 @@ button {
         border-radius: 50%;
         left: -25px; }
 
+@media (max-width: 650px) {
+  .services .row {
+    flex-direction: column;
+    align-items: flex-start; }
+    .services .row__image {
+      width: 80vw; } }
+
 .industry_partners {
   display: flex;
   justify-content: center;
@@ -212,16 +229,31 @@ button {
       margin: 15px 0px;
       list-style-type: none; }
 
+@media (max-width: 650px) {
+  .industry_partners {
+    flex-direction: column-reverse; }
+    .industry_partners__image {
+      margin-right: 0px;
+      width: 80vw;
+      margin-top: 60px;
+      margin-bottom: 30px; }
+    .industry_partners__list {
+      width: 80vw;
+      margin-right: 0px;
+      margin-bottom: 60px; } }
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 30px;
   min-height: 40vh;
   background-color: #FFFFFF; }
   .footer .row {
     justify-content: space-around;
-    align-items: start; }
+    align-items: start;
+    flex-wrap: wrap; }
     .footer .row .column .title {
       margin-bottom: 30px; }
     .footer .row .column .links .link {
@@ -231,3 +263,7 @@ button {
         margin-right: 5px; }
         .footer .row .column .links .link .image img {
           height: 20px; }
+
+@media (max-width: 540px) {
+  .footer .row {
+    justify-content: flex-start; } }

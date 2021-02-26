@@ -48,3 +48,18 @@
       }
     }
 }
+
+@media(max-width:420px){
+    .jumbotron{
+        .row{
+            .text{
+                width: 80vw;
+                &__main{
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

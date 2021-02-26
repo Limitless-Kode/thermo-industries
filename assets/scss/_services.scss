@@ -50,3 +50,16 @@
            }
     }
 }
+
+
+@media(max-width: 650px){
+    .services{
+        .row{
+            flex-direction: column;
+            align-items: flex-start;
+            &__image{
+                width: 80vw;
+            }
+        }
+    }
+}
