@@ -1,6 +1,7 @@
-.container.about{
+.container{
     .about {
-        min-height: 50vh;
+        display: none;
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;

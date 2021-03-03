@@ -289,22 +289,23 @@ textarea {
   .footer .row {
     justify-content: flex-start; } }
 
-.container.about .about {
-  min-height: 50vh;
+.container .about {
+  display: none;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url("../images/bg.png") center top no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  .container.about .about h1 {
+  .container .about h1 {
     color: #FFFFFF;
     text-transform: uppercase; }
 
-.container.about .content {
+.container .content {
   padding: 60px; }
 
-.container.contact .contactus {
+.container.contact .contact_us {
   min-height: 50vh;
   display: flex;
   justify-content: center;
@@ -312,7 +313,7 @@ textarea {
   background: url("../images/bg.png") center top no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  .container.contact .contactus h1 {
+  .container.contact .contact_us h1 {
     color: #FFFFFF;
     text-transform: uppercase; }
 
