@@ -1,0 +1,22 @@
+.products{
+    width: 100vw;
+    padding: 30px;
+    .row{
+        .thumbnail{
+            height: 260px;
+            width: 300px;
+            border-radius: 10px 10px 0px 0px;
+            overflow: hidden;
+            &__title{
+                h3{
+                    color: black;
+                }
+            }
+            img{
+                height: 260px;
+                width: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+}

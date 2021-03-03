@@ -14,11 +14,30 @@
     }
 
     .contact_content{
-        width: 100vw;
+        width: 360px;
+        margin: 0 auto;
         padding: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        .text{
+            width: 360px;
+            margin-bottom: 20px;
+            h2{
+            font-size: 18px;
+        }
+        p{
+            font-size: 13px;
+            line-height: 16px;
+        }
+        }
+        form{
+            .form-group{
+                .input-group{
+                    margin: 10px 0px;
+                }
+            }
+        }
     }
 }

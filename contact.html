@@ -32,10 +32,27 @@
         </div>
 
         <div class="contact_content">
-            <img src="assets/images/not_found.png" alt="Page Under Construction">
-            <p>
-                Hello, this page is Currently under Construction. Please use Our Email or Phone Services.
-            </p>
+            <div class="text">
+                <h2>SEND US A MESSAGE</h2>
+            <p>We would get in touch as soon as possible.</p>
+            </div>
+           <form id="contact_form">
+               <div class="form-group">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Full Name">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder="Phone">
+                </div>
+                <div class="input-group">
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+           </div> 
+           </form>
         </div>
 
 
@@ -107,5 +124,6 @@
     </div>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/mail.js"></script>
 </body>
 </html>

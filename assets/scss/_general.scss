@@ -6,6 +6,7 @@
     grid-gap: 30px;
 }
 
+a.btn,
 button{
     background-color: $primary-color;
     min-width: 160px;
@@ -15,6 +16,13 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+a.btn{
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    margin: 15px 0px;
 }
 
 #map{
@@ -38,3 +46,15 @@ a{
     text-decoration: none;
     color: black;
 }
+
+textarea,
+input{
+    padding: 10px 15px;
+    width: 360px;
+}
+
+textarea{
+    height: 120px;
+    resize: none;
+}
+
