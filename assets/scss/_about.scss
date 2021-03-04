@@ -12,9 +12,10 @@
             color: $white;
             text-transform: uppercase;
         }
+
+        &__content{
+            padding: 60px;
+        }
     }
     
-    .content{
-        padding: 60px;
-    }
 }

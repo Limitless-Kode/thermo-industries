@@ -56,5 +56,11 @@ input{
 textarea{
     height: 120px;
     resize: none;
+    font-family: 'Roboto';
 }
 
+div.error{
+    font-size: 12px;
+    margin: 8px 0px;
+    color: red;
+}

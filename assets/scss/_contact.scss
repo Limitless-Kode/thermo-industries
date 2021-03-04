@@ -26,6 +26,7 @@
             margin-bottom: 20px;
             h2{
             font-size: 18px;
+            margin-bottom: 5px;
         }
         p{
             font-size: 13px;
@@ -39,5 +40,9 @@
                 }
             }
         }
+    }
+
+    .row{
+        justify-content: space-between;
     }
 }
