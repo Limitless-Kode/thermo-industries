@@ -31,24 +31,23 @@ contact_form.addEventListener("submit", async (e)=>{
         formData.append('message', message);
         formData.append('phone', phone);
 
-        const request = await fetch(
-            'assets/scripts/mail.php',
-            { 
-                method: 'POST', 
-                mode: "same-origin",
-                credentials: "same-origin",
-                headers: {
-                "Content-Type": "application/json"
-                },
-                body: JSON.stringify({name, email, message, phone})
-            }
-        );
+        fetch('assets/scripts/mail.php',{
+            method: 'post',
+            body: formData
+        })
+        .then((data)=>data.json())
+        .then((result)=>{
+          if (result[0]) {
+            //sent
+            status.style.color = '#179C6B';
+            status.innerText = "Message Sent";
+            contact_form.reset();
+          } else {
+            status.style.color = 'red';
+            status.innerText = "Message Not Sent. Please try again!";
+          }
+        }).catch((err)=> console.log(error));
 
-        console.log(request.text());
-
-        status.style.color = '#179C6B';
-        status.innerText = "Message Sent";
-        contact_form.reset();
     }
 
 });

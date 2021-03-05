@@ -1,30 +1,32 @@
 <?php
-$to_email = "rockpeter734@gmail.com";
-$subject = "Simple Email Test via PHP";
-$body = "Hi,nn This is test email send by PHP Script";
-$headers = "From: limitless@gmail.com";
 
- 
-if (mail($to_email, $subject, $body)) {
-    echo "Email successfully sent to $to_email...";
-} else {
-    echo "Email sending failed...";
-}
+$to = 'rockpeter734@gmail.com';
+$name = $_POST["name"];
+$email= $_POST["email"];
+$message= $_POST["message"];
+$phone= $_POST["phone"];
 
-$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
 
-if ($contentType === "application/json") {
-  //Receive the RAW post data.
-  $content = trim(file_get_contents("php://input"));
+$headers = 'MIME-Version: 1.0' . "\r\n";
+$headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-  $decoded = json_decode($content, true);
+$message ='<table style="width:100%">
+    <tr>
+        <td>'.$name.'  '.$phone.'</td>
+    </tr>
+    <tr><td>Email: '.$email.'</td></tr>
+    <tr><td>phone: '.$phone.'</td></tr>
+    <tr><td>Text: '.$message.'</td></tr>
 
-  //If json_decode failed, the JSON is invalid.
-  if(! is_array($decoded)) {
+</table>';
 
-  } else {
-    // Send error back to user.
-  }
+
+if (@mail($to, $email, $message, $headers))
+{
+  echo json_encode([true,'We would get in touch with you shortly']);
+}else{
+  echo json_encode([false,"Sorry something wrong happened, please, try again!"]);
 }
 
 ?>
